@@ -1,34 +1,17 @@
 import streamlit as st
-st.set_page_config(page_title="Colony Calculator", page_icon="🧫")
+from streamlit_option_menu import option_menu
+import time
 
-st.title("🧫 Welcome to Colony Calculator")
-st.markdown("Selamat datang di aplikasi *Kalkulator Koloni Bakteri*.")
+st.set_page_config(page_title="Total Plate Count",page_icon=":herb:")
 
-menu = st.sidebar.selectbox("Pilih Menu", ["Beranda", "Informasi Koloni Bakteri", "Tentang Kami"])
+#INPUT CSS
+with open('coba coba.css') as f:
+	st.markdown(f'<style>{f.read()}</syle>',unsafe-allow_html=True)
 
-if menu == "Beranda":
-    st.header("💡 Kalkulator Koloni")
-    st.markdown("""
-        Aplikasi ini digunakan untuk menghitung jumlah koloni bakteri berdasarkan data jumlah koloni, 
-        volume inokulasi, dan faktor pengenceran. Masukkan nilai-nilai pada form yang tersedia untuk memulai perhitungan.
-    """)
-
-elif menu == "Informasi Koloni Bakteri":
-    st.header("🔬 Informasi Koloni Bakteri")
-    st.markdown("""
-        Koloni bakteri adalah kelompok sel bakteri yang berkembang biak dari satu sel bakteri induk di atas media padat. 
-        Koloni digunakan untuk memperkirakan jumlah mikroorganisme dalam sampel. 
-        Ini penting dalam kontrol kualitas makanan, air, dan produk lainnya.
-    """)
-
-
-elif menu == "Tentang Kami":
-    st.header("📘 Tentang Kami")
-    st.markdown("""
-        Aplikasi ini dikembangkan sebagai alat bantu pembelajaran dan praktikum dalam mikrobiologi, 
-        khususnya untuk analisis jumlah koloni bakteri. Dirancang dengan antarmuka yang sederhana dan mudah digunakan.
-    """)
-
+#SIDEBAR MENU
+with st.sidebar:
+	selected = option_menu("Main Menu',|"Home",'Total Plate Count','Tentang Kami'|,
+	   icons=['house','calculator','inbox'],menu_icon="cast")
 
 
 st.markdown("""
