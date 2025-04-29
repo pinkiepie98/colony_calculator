@@ -1,17 +1,11 @@
-import streamlit as st
-from streamlit_option_menu import option_menu
-import time
+st.sidebar:
+	selected = option_menu(
+		menu_title= "Main menu",
+		options=["Home", "Total Plate Count","Tentang Kami"]
+		
+		
+	
 
-st.set_page_config(page_title="Total Plate Count",page_icon=":herb:")
-
-#INPUT CSS
-with open('coba coba.css') as f:
-	st.markdown(f'<style>{f.read()}</syle>',unsafe-allow_html=True)
-
-#SIDEBAR MENU
-with st.sidebar:
-	option_menu("Main Menu',|"Home",'Total Plate Count','Tentang Kami'|,
-	   icons=['house','calculator','inbox'],menu_icon="cast")
 
 
 st.markdown("""
