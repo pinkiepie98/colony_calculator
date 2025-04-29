@@ -52,7 +52,6 @@ jumlah_koloni = st.number_input("Masukkan jumlah koloni:", min_value=0, step=1)
 faktor_pengenceran = st.number_input("Masukkan faktor pengenceran:", min_value=1, step=1)
 volume_inokulasi = st.number_input("Masukkan volume inokulasi (dalam mL):", min_value=0.01, step=0.01)
 
-Tombol Hitung
 if st.button("Hitung Koloni"):
     if volume_inokulasi > 0:
         hasil = jumlah_koloni / (faktor_pengenceran * volume_inokulasi)
