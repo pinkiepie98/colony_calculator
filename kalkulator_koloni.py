@@ -1,6 +1,8 @@
 import streamlit as st
+st.set_page_config(page_title="Colony Calculator", page_icon="🧫")
+
 st.title("🧫 Welcome to Colony Calculator")
-st.markdown("Selamat datang di aplikasi Kalkulator Koloni Bakteri.")
+st.markdown("Selamat datang di aplikasi *Kalkulator Koloni Bakteri*.")
 
 menu = st.sidebar.selectbox("Pilih Menu", ["Beranda", "Informasi Koloni Bakteri", "Tentang Kami"])
 
