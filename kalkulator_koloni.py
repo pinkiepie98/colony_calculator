@@ -10,7 +10,7 @@ with open('coba coba.css') as f:
 
 #SIDEBAR MENU
 with st.sidebar:
-	selected = option_menu("Main Menu',|"Home",'Total Plate Count','Tentang Kami'|,
+	option_menu("Main Menu',|"Home",'Total Plate Count','Tentang Kami'|,
 	   icons=['house','calculator','inbox'],menu_icon="cast")
 
 
