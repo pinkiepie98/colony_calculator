@@ -26,7 +26,7 @@ elif menu == "Tentang Kami":
         Aplikasi ini dikembangkan sebagai alat bantu pembelajaran dan praktikum dalam mikrobiologi, 
         khususnya untuk analisis jumlah koloni bakteri. Dirancang dengan antarmuka yang sederhana dan mudah digunakan.
     """)
-````
+
 
 
 st.markdown("""
