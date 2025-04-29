@@ -48,7 +48,6 @@ st.markdown('<h1 class="title">🧫 Kalkulator Koloni Bakteri</h1>', unsafe_allo
 
 st.write("Aplikasi sederhana untuk menghitung jumlah koloni bakteri per mL sampel berdasarkan jumlah koloni, faktor pengenceran, dan volume inokulasi.")
 
-Input user
 jumlah_koloni = st.number_input("Masukkan jumlah koloni:", min_value=0, step=1)
 faktor_pengenceran = st.number_input("Masukkan faktor pengenceran:", min_value=1, step=1)
 volume_inokulasi = st.number_input("Masukkan volume inokulasi (dalam mL):", min_value=0.01, step=0.01)
